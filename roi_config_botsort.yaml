@@ -1,0 +1,160 @@
+rois:
+  ROI1:
+  - - 28.0
+    - 30.0
+  - - 29.0
+    - 64.0
+  - - 538.0
+    - 85.0
+  - - 564.0
+    - 415.0
+  - - 13.0
+    - 389.0
+  ROI2:
+  - - 12.0
+    - 405.0
+  - - 568.0
+    - 434.0
+  - - 577.0
+    - 706.0
+  - - 7.0
+    - 709.0
+  ROI3:
+  - - 556.0
+    - 108.0
+  - - 595.0
+    - 691.0
+  - - 944.0
+    - 688.0
+  - - 839.0
+    - 136.0
+objects:
+  3:
+    class: person
+    sessions:
+    - roi: ROI3
+      enter_time: 0.02
+      exit_time: 18.11
+      duration: 18.09
+  4:
+    class: person
+    sessions:
+    - roi: ROI2
+      enter_time: 0.02
+      exit_time: 0.98
+      duration: 0.97
+    - roi: ROI1
+      enter_time: 0.98
+      exit_time: 1.33
+      duration: 0.35
+    - roi: ROI1
+      enter_time: 1.35
+      exit_time: 1.37
+      duration: 0.02
+    - roi: ROI2
+      enter_time: 1.39
+      exit_time: 1.64
+      duration: 0.25
+    - roi: ROI2
+      enter_time: 1.69
+      exit_time: 1.84
+      duration: 0.15
+    - roi: ROI2
+      enter_time: 1.97
+      exit_time: 18.11
+      duration: 16.14
+  52:
+    class: person
+    sessions:
+    - roi: ROI3
+      enter_time: 1.89
+      exit_time: 18.11
+      duration: 16.22
+  83:
+    class: person
+    sessions:
+    - roi: ROI3
+      enter_time: 3.64
+      exit_time: 18.11
+      duration: 14.47
+  110:
+    class: person
+    sessions:
+    - roi: ROI3
+      enter_time: 4.29
+      exit_time: 18.11
+      duration: 13.82
+  140:
+    class: person
+    sessions:
+    - roi: ROI3
+      enter_time: 5.12
+      exit_time: 18.11
+      duration: 12.98
+  141:
+    class: person
+    sessions:
+    - roi: ROI3
+      enter_time: 5.12
+      exit_time: 18.11
+      duration: 12.98
+  239:
+    class: person
+    sessions:
+    - roi: ROI3
+      enter_time: 8.49
+      exit_time: 18.11
+      duration: 9.61
+  244:
+    class: person
+    sessions:
+    - roi: ROI1
+      enter_time: 8.63
+      exit_time: 18.11
+      duration: 9.48
+  253:
+    class: person
+    sessions:
+    - roi: ROI1
+      enter_time: 8.79
+      exit_time: 18.11
+      duration: 9.31
+  264:
+    class: person
+    sessions:
+    - roi: ROI3
+      enter_time: 9.11
+      exit_time: 18.11
+      duration: 8.99
+  271:
+    class: person
+    sessions:
+    - roi: ROI1
+      enter_time: 9.38
+      exit_time: 11.8
+      duration: 2.42
+    - roi: ROI1
+      enter_time: 12.0
+      exit_time: 14.48
+      duration: 2.49
+  290:
+    class: person
+    sessions:
+    - roi: ROI3
+      enter_time: 10.7
+      exit_time: 18.11
+      duration: 7.41
+  300:
+    class: person
+    sessions:
+    - roi: ROI1
+      enter_time: 11.78
+      exit_time: 18.11
+      duration: 6.32
+  358:
+    class: person
+    sessions:
+    - roi: ROI2
+      enter_time: 14.5
+      exit_time: 18.11
+      duration: 3.6
