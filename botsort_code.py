@@ -7,12 +7,27 @@ import os
 import csv
 
 
+
 # ---------------------- CONFIGURATION ----------------------
 video_path = "C:/Computer Vision/Internship Project/train/circular_2025-07-01_16-03.mp4"
-model = YOLO("yolo11x.pt")
+model = YOLO("yolo11l.pt")
 roi_yaml_path = "roi_config_botsort.yaml"
 output_video_path = "botsort_output.mp4"
 target_class = "person"
+
+
+#----------------------- Time Format ------------------
+def format_time(seconds):
+    '''Converting seconds (float) to HH:MM:SS.mmm format. '''
+    if seconds is None:
+        return None
+    millis = int((seconds % 1) * 1000)
+    h = int(seconds // 3600)
+    m = int((seconds % 3600) // 60)
+    s = int(seconds % 60)
+    return f"{h:02}:{m:02}:{s:02}.{millis:03}"
+
+
 
 # ---------------------- ROI SELECTION ----------------------
 roi_points = []
@@ -228,16 +243,14 @@ objects_summary = {}
 for obj_id, obj_info in object_log.items():
     obj_sessions = []
     for s in obj_info["sessions"]:
-        enter = round(s["enter_time"], 2)
+        enter = format_time(s["enter_time"])
         if s["exit_time"] is not None:
-            exit_t = round(s["exit_time"], 2)
-            dur = round(
-                s.get("duration", s["exit_time"] - s["enter_time"]),
-                2,
-            )
+            exit_t = format_time(s["exit_time"])
+            dur = round(s.get("duration", s["exit_time"] - s["enter_time"]), 2)
         else:
             exit_t = None
             dur = None
+
         obj_sessions.append(
             {
                 "roi": s["roi"],
@@ -277,7 +290,15 @@ yaml_out = {
     "objects": objects_summary
 }
 
+comment = """ # Initially selects the ROI(region of interest) coordinates and stores as a dictionary in .yaml
+# Finally copy these Coordinates of ROIs and along with the Tracking summary stores in the .yaml file.
+# ROI coordinates are are in (x,y) format:   --x then in next line -y co ordinate then in next line new point coordinates. """
+
 with open(roi_yaml_path, "w") as f:
+    #Write the comment at the top:
+    f.write(comment + "\n")
+
+    # Dump the YAML content
     yaml.safe_dump(yaml_out, f, sort_keys=False)
 
 print(f"\n Tracking summary (ROIs + objects + roi_summary) saved to {roi_yaml_path}")
@@ -301,8 +322,8 @@ for obj_id, info in object_log.items():
     roi_visits = {roi: [] for roi in roi_names}
     for sess in info["sessions"]:
         roi_visits[sess["roi"]].append((
-            round(sess["enter_time"], 2),
-            round(sess["exit_time"], 2) if sess["exit_time"] else ""
+            format_time(sess["enter_time"]),
+            format_time(sess["exit_time"]) if sess["exit_time"] else ""
         ))
 
     # Determine maximum visits across all ROIs for this person
