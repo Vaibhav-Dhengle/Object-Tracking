@@ -23,14 +23,22 @@ This project has been tested under the following setup:
 
  ---
 
- ## **Prerequisities**
+ ## **Prerequisities:**
+- ultralytics
+- opencv-python
+- shapely
+- numpy
+- torch
+- torchvision
+- lap
+- pyyaml
 
- Before running this project, install the required dependencies:
- ### **Install Python Packages**
-In PyCharm Terminal:
-'''bash
-pip installl ultralytics opencv-python shapely numpy pyyaml torch torchvision lap
 
+Before running this project, install the required dependencies:
+In PyCharm Terminal install python packages:
+```bash
+pip install ultralytics opencv-python shapely numpy pyyaml torch torchvision lap
+```
 ---
 
 ## How to configure
@@ -38,9 +46,11 @@ pip installl ultralytics opencv-python shapely numpy pyyaml torch torchvision la
 1. clone the repository: https://github.com/Vaibhav-Dhengle/Object-Tracking.git
 2. Create and active the virtual environment:
 In Terminal give following commands:
-1] python -m venv .venv
-2] .venv\Scripts\activation
+```bash
+python -m venv .venv
 
+.venv\Scripts\activation
+```
 ---
 
 ## **CSV Export**
