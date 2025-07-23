@@ -1,3 +1,7 @@
+ # Initially selects the ROI(region of interest) coordinates and stores as a dictionary in .yaml
+# Finally copy these Coordinates of ROIs and along with the Tracking summary stores in the .yaml file.
+# ROI coordinates are are in (x,y) format:   --x then in next line -y co ordinate then in next line new point coordinates. 
+---
 rois:
   ROI1:
   - - 22.0
@@ -31,150 +35,150 @@ objects:
     class: person
     sessions:
     - roi: ROI3
-      enter_time: 0.02
-      exit_time: 18.11
+      enter_time: '00:00:00.016'
+      exit_time: '00:00:18.105'
       duration: 18.09
   4:
     class: person
     sessions:
     - roi: ROI2
-      enter_time: 0.02
-      exit_time: 0.22
+      enter_time: '00:00:00.016'
+      exit_time: '00:00:00.216'
       duration: 0.2
     - roi: ROI2
-      enter_time: 0.23
-      exit_time: 0.28
+      enter_time: '00:00:00.233'
+      exit_time: '00:00:00.283'
       duration: 0.05
     - roi: ROI1
-      enter_time: 0.55
-      exit_time: 2.74
+      enter_time: '00:00:00.550'
+      exit_time: '00:00:02.736'
       duration: 2.19
     - roi: ROI1
-      enter_time: 3.1
-      exit_time: 3.17
+      enter_time: '00:00:03.103'
+      exit_time: '00:00:03.170'
       duration: 0.07
     - roi: ROI2
-      enter_time: 3.27
-      exit_time: 7.84
+      enter_time: '00:00:03.270'
+      exit_time: '00:00:07.842'
       duration: 4.57
     - roi: ROI2
-      enter_time: 8.29
-      exit_time: 14.0
+      enter_time: '00:00:08.293'
+      exit_time: '00:00:14.000'
       duration: 5.71
     - roi: ROI1
-      enter_time: 14.0
-      exit_time: 14.03
+      enter_time: '00:00:14.000'
+      exit_time: '00:00:14.033'
       duration: 0.03
     - roi: ROI2
-      enter_time: 14.03
-      exit_time: 18.11
+      enter_time: '00:00:14.033'
+      exit_time: '00:00:18.105'
       duration: 4.07
-  44:
+  43:
     class: person
     sessions:
     - roi: ROI3
-      enter_time: 1.89
-      exit_time: 18.11
+      enter_time: '00:00:01.885'
+      exit_time: '00:00:18.105'
       duration: 16.22
-  63:
+  62:
     class: person
     sessions:
     - roi: ROI3
-      enter_time: 3.64
-      exit_time: 18.11
+      enter_time: '00:00:03.637'
+      exit_time: '00:00:18.105'
       duration: 14.47
-  87:
+  86:
     class: person
     sessions:
     - roi: ROI3
-      enter_time: 4.29
-      exit_time: 18.11
+      enter_time: '00:00:04.288'
+      exit_time: '00:00:18.105'
       duration: 13.82
+  113:
+    class: person
+    sessions:
+    - roi: ROI3
+      enter_time: '00:00:05.122'
+      exit_time: '00:00:18.105'
+      duration: 12.98
   114:
     class: person
     sessions:
     - roi: ROI3
-      enter_time: 5.12
-      exit_time: 18.11
+      enter_time: '00:00:05.122'
+      exit_time: '00:00:18.105'
       duration: 12.98
-  115:
+  218:
     class: person
     sessions:
     - roi: ROI3
-      enter_time: 5.12
-      exit_time: 18.11
-      duration: 12.98
-  220:
-    class: person
-    sessions:
-    - roi: ROI3
-      enter_time: 8.49
-      exit_time: 18.11
+      enter_time: '00:00:08.493'
+      exit_time: '00:00:18.105'
       duration: 9.61
+  224:
+    class: person
+    sessions:
+    - roi: ROI1
+      enter_time: '00:00:08.627'
+      exit_time: '00:00:18.105'
+      duration: 9.48
   227:
     class: person
     sessions:
     - roi: ROI1
-      enter_time: 8.63
-      exit_time: 18.11
-      duration: 9.48
-  230:
-    class: person
-    sessions:
-    - roi: ROI1
-      enter_time: 8.73
-      exit_time: 18.11
+      enter_time: '00:00:08.727'
+      exit_time: '00:00:18.105'
       duration: 9.38
-  234:
+  231:
     class: person
     sessions:
     - roi: ROI1
-      enter_time: 8.79
-      exit_time: 18.11
+      enter_time: '00:00:08.793'
+      exit_time: '00:00:18.105'
       duration: 9.31
-  247:
+  244:
     class: person
     sessions:
     - roi: ROI3
-      enter_time: 9.11
-      exit_time: 18.11
+      enter_time: '00:00:09.111'
+      exit_time: '00:00:18.105'
       duration: 8.99
-  254:
+  251:
     class: person
     sessions:
     - roi: ROI1
-      enter_time: 9.38
-      exit_time: 18.11
+      enter_time: '00:00:09.377'
+      exit_time: '00:00:18.105'
       duration: 8.73
-  273:
+  270:
     class: person
     sessions:
     - roi: ROI3
-      enter_time: 10.7
-      exit_time: 18.11
+      enter_time: '00:00:10.696'
+      exit_time: '00:00:18.105'
       duration: 7.41
-  283:
+  280:
     class: person
     sessions:
     - roi: ROI1
-      enter_time: 11.78
-      exit_time: 12.52
+      enter_time: '00:00:11.780'
+      exit_time: '00:00:12.515'
       duration: 0.73
     - roi: ROI1
-      enter_time: 13.18
-      exit_time: 18.11
+      enter_time: '00:00:13.182'
+      exit_time: '00:00:18.105'
       duration: 4.92
-  345:
+  342:
     class: person
     sessions:
     - roi: ROI2
-      enter_time: 14.5
-      exit_time: 18.11
+      enter_time: '00:00:14.500'
+      exit_time: '00:00:18.105'
       duration: 3.6
-  350:
+  347:
     class: person
     sessions:
     - roi: ROI1
-      enter_time: 14.6
-      exit_time: 18.11
+      enter_time: '00:00:14.600'
+      exit_time: '00:00:18.105'
       duration: 3.5

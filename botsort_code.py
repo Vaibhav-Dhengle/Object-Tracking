@@ -296,7 +296,7 @@ comment = """ # Initially selects the ROI(region of interest) coordinates and st
 
 with open(roi_yaml_path, "w") as f:
     #Write the comment at the top:
-    f.write(comment + "\n")
+    f.write(comment + "\n---\n")
 
     # Dump the YAML content
     yaml.safe_dump(yaml_out, f, sort_keys=False)

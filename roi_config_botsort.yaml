@@ -1,6 +1,7 @@
  # Initially selects the ROI(region of interest) coordinates and stores as a dictionary in .yaml
 # Finally copy these Coordinates of ROIs and along with the Tracking summary stores in the .yaml file.
 # ROI coordinates are are in (x,y) format:   --x then in next line -y co ordinate then in next line new point coordinates. 
+---
 rois:
   roi1:
   - - 10.0
