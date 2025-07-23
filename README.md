@@ -31,8 +31,8 @@ pip installl ultralytics opencv-python shapely numpy pyyaml torch torchvision la
 
 ## How to configure
 
-1. clone the repository
-2. Create virtual environment
+1. clone the repository: https://github.com/Vaibhav-Dhengle/Object-Tracking.git
+2. Create and active the virtual environment:
 In Terminal give following commands:
 1] python -m venv .venv
 2] .venv\Scripts\activation
