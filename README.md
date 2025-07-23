@@ -48,7 +48,8 @@ pip install ultralytics opencv-python shapely numpy pyyaml torch torchvision lap
 In Terminal give following commands:
 ```bash
 python -m venv .venv
-
+```
+```bash
 .venv\Scripts\activation
 ```
 ---
