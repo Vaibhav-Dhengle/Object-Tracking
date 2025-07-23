@@ -28,6 +28,7 @@ This project has been tested under the following setup:
  Before running this project, install the required dependencies:
  ### **Install Python Packages**
 In PyCharm Terminal:
+'''bash
 pip installl ultralytics opencv-python shapely numpy pyyaml torch torchvision lap
 
 ---
