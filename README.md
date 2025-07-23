@@ -11,12 +11,15 @@ This project implements ** real-time person tracking** using **YOLO11** for dete
 ## **System Environment**
 
 This project has been tested under the following setup:
-- **OS:** Windows 11
-- **Pthon:** 3.10.12
+- **OS:** Name: Windows 11, Version: 10.0.26100
+- **Pthon:** 3.13.2
 - **IDE:** Pycharm 2024.2
-- **YOLO11:** ultralytics
-- **OpenCV:** 4.10+
-- **Shapely:** 2.0+
+- **YOLO11:** ultralytics 8.3.149
+- **OpenCV-python:** 4.11.0
+- **Shapely:** 2.1.1
+- **Numpy:** 2.2.4
+- **torch:** 2.7.0
+- **torchvision:** 0.22.0
 
  ---
 
